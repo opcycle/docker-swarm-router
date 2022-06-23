@@ -1,4 +1,4 @@
-# Ingress Service for Docker Swarm
+# Routing Service for Docker Swarm
 
 [![Docker Stars](https://img.shields.io/docker/stars/opcycle/swarm-router.svg?style=flat-square)](https://hub.docker.com/r/opcycle/swarm-router) [![Docker Pulls](https://img.shields.io/docker/pulls/opcycle/swarm-router.svg?style=flat-square)](https://hub.docker.com/r/opcycle/swarm-router)
 
