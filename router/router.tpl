@@ -14,6 +14,5 @@ server {
 
     proxy_pass http://{{ $element.ServiceName }}:{{ $element.ServicePort }}{{ $element.ServicePath }};
   }
-  {{- end }}
 }
 {{ end -}}
