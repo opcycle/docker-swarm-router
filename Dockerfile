@@ -15,7 +15,7 @@ RUN dnf install -y nginx \
 ENV DOCKER_HOST "unix:///var/run/docker.sock"
 ENV UPDATE_INTERVAL "1"
 ENV OUTPUT_FILE "/etc/nginx/conf.d/proxy.conf"
-ENV TEMPLATE_FILE "/opt/nginx/router.tpl"
+ENV TEMPLATE_FILE "/etc/nginx/router.tpl"
 
 COPY --from=build /src/router/router /usr/sbin/swarm-router
 
