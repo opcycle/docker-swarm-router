@@ -10,7 +10,8 @@ LABEL repository="https://github.com/opcycle/docker-swarm-router"
 
 RUN dnf install -y nginx \
     && ln -sf /dev/stdout /var/log/nginx/access.log \
-    && ln -sf /dev/stderr /var/log/nginx/error.log
+    && ln -sf /dev/stderr /var/log/nginx/error.log \
+    && dnf clean all
 
 ENV DOCKER_HOST "unix:///var/run/docker.sock"
 ENV UPDATE_INTERVAL "1"
