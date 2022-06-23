@@ -13,7 +13,7 @@ services:
       restart_policy:
         condition: on-failure
       labels:
-        ingress.host: my-service.company.tld
+        router.host: my-service.company.tld
 
 networks:
   routing:
