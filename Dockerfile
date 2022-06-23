@@ -19,7 +19,7 @@ ENV TEMPLATE_FILE "/opt/nginx/router.tpl"
 
 COPY --from=build /src/router/router /usr/sbin/swarm-router
 
-ADD ingress/router.tpl /etc/nginx
+ADD router/router.tpl /etc/nginx
 ADD nginx.conf /etc/nginx/nginx.conf
 
 HEALTHCHECK --interval=3s --timeout=3s \
